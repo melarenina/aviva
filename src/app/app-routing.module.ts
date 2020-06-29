@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './core/home/home.component';
 import { ErrorComponent } from './core/error/error.component';
 import { NotFoundComponent } from './core/not-found/not-found.component';
+import { ContatoComponent } from './contato/contato.component';
 
 
 const routes: Routes = [
@@ -17,8 +18,12 @@ const routes: Routes = [
 
   // --------------------------------DEMO COMPONENT--------------------------------
   // LazyLoading (pra não carregar tudo o que vem na barra de network)
-  { path: 'demo', loadChildren: () => import('./demo/demo.module').then(module => module.DemoModule) },
+  { path: 'cadastroMembro', loadChildren: () => import('./demo/demo.module').then(module => module.DemoModule) },
   // --------------------------------DEMO COMPONENT--------------------------------
+
+  // --------------------------------ERROR COMPONENT--------------------------------
+  { path: 'contato', component: ContatoComponent},
+  // --------------------------------ERROR COMPONENT--------------------------------
 
   // --------------------------------NOT FOUND COMPONENT--------------------------------
   { path: '**', component: NotFoundComponent },
