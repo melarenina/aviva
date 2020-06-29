@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ErrorComponent } from './error/error.component';
 import { GlobalErrorHandler } from './global-error-handler.service';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 
@@ -18,7 +19,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     NavMenuComponent,
     FooterComponent,
     ErrorComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CarouselComponent
   ],
   imports: [
     RouterModule,
@@ -27,7 +29,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   exports: [
     NavMenuComponent,
-    FooterComponent
+    FooterComponent,
+    CarouselComponent
   ],
   providers: [
     { provide: ErrorHandler, useClass: GlobalErrorHandler }

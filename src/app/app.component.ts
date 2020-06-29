@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -9,11 +10,11 @@ import { Subscription } from 'rxjs';
 export class AppComponent implements OnInit{
 
   subscription: Subscription;
+  home = false;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-
   }
 
 }
