@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/" style="width: 12%;"><img src="../../../assets/logo.png" width="100%"></a>
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+    [attr.aria-expanded]="!isCollapsed" aria-controls="navmemu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse" id="navmemu" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link" routerLink="/demo">Demo</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
