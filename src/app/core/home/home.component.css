@@ -9,18 +9,17 @@
   padding: 20 2%;
 }
 
-.overlay-desc {
-  background: rgba(0, 0, 0, 0.5);
+.container-aviva{
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 126%;
+  /* background: rgba(131, 92, 92, 0.5); */
+  margin-top: -39%;
+  margin-left: 16%;
+}
+
+.overlay-desc {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .h1-aviva {
@@ -38,7 +37,7 @@ main {
 .p-aviva {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;
+  font-size: 2vw;
   line-height: 1.7rem;
 }
 /* #myVideo{} */
@@ -64,26 +63,12 @@ main {
   }
 }
 
-/* --------- TAMANHO CELULAR ---------*/
 @media (max-aspect-ratio: 3/2){
   #myVideo {
     width: 100%;
     height: auto;
   }
-  .overlay-desc {
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    height: 51%;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
-/* --------- TAMANHO CELULAR ---------*/
 
 @media (aspect-ratio: 1/1){
   #myVideo {
