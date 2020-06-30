@@ -1,0 +1,101 @@
+#hero{
+  /* background-image: url(../../../assets/1.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center; */
+}
+
+.h-txt {
+  padding: 20 2%;
+}
+
+.overlay-desc {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 126%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1-aviva {
+  color: white;
+  font-family: 'Nobile', sans-serif;
+  font-size: 9vw;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.p-aviva {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+/* #myVideo{} */
+
+@media (min-aspect-ratio: 16/9){
+  #myVideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  #myVideo {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (min-aspect-ratio: 8/5){
+  #myVideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* --------- TAMANHO CELULAR ---------*/
+@media (max-aspect-ratio: 3/2){
+  #myVideo {
+    width: 100%;
+    height: auto;
+  }
+  .overlay-desc {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 51%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* --------- TAMANHO CELULAR ---------*/
+
+@media (aspect-ratio: 1/1){
+  #myVideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* @media (max-width: 767px){
+  #myVideo {
+    width: 100%;
+    height: 100%;
+  }
+} */
+
