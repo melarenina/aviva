@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationStart, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
+import { NavigationStart, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
       console.log(this.link);
     });
   }
+
 
   ngOnInit() {
 

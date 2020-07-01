@@ -9,7 +9,7 @@ import { ContatoComponent } from './contato/contato.component';
 
 const routes: Routes = [
   // --------------------------------HOME COMPONENT--------------------------------
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent},
   // --------------------------------HOME COMPONENT--------------------------------
 
   // --------------------------------ERROR COMPONENT--------------------------------
@@ -18,7 +18,8 @@ const routes: Routes = [
 
   // --------------------------------DEMO COMPONENT--------------------------------
   // LazyLoading (pra não carregar tudo o que vem na barra de network)
-  { path: 'cadastroMembro', loadChildren: () => import('./demo/demo.module').then(module => module.DemoModule) },
+  // tslint:disable-next-line:max-line-length
+  { path: 'cadastroMembro', loadChildren: () => import('./demo/demo.module').then(module => module.DemoModule)},
   // --------------------------------DEMO COMPONENT--------------------------------
 
   // --------------------------------ERROR COMPONENT--------------------------------
