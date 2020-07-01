@@ -1,5 +1,7 @@
 section {
   background-image: url('../../assets/bemvindo.png');
-    width: 100%;
-    height: 500px;
+  width: 100%;
+  height: 26vw;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
