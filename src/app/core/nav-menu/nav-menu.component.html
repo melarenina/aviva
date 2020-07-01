@@ -5,8 +5,8 @@
     [attr.aria-expanded]="!isCollapsed" aria-controls="navmemu">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-collapse" id="navmemu" [ngbCollapse]="isCollapsed">
-      <ul class="navbar-nav mr-auto">
+    <div class="navbar-collapse" id="navmemu" [ngbCollapse]="isCollapsed" style="justify-content: flex-end;">
+      <ul class="navbar-nav">
         <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
           <a class="nav-link" routerLink="/cadastroMembro">Cadastro de Membros</a>
         </li>
