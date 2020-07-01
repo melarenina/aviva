@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-primary" [ngClass]="{'sticky' : isSticky || test}">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="/" style="width: 50%;"><img src="../../../assets/logo.png" class="img-fluid"></a>
-    <button class="navbar-toggler" type="button" (click)="collapsed()"
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
     [attr.aria-expanded]="!isCollapsed" aria-controls="navmemu">
       <span class="navbar-toggler-icon"></span>
     </button>

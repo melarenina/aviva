@@ -1,5 +1,4 @@
 .navbar {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -9,7 +8,7 @@
   transition: 0.6s;
   padding: 16px 40px 16px;
   z-index: 100000;
-  background-color: transparent !important;
+  background-color: black !important;
 }
 
 .navbar-brand{
