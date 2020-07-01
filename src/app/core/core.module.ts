@@ -25,7 +25,7 @@ import { CarouselComponent } from './carousel/carousel.component';
   imports: [
     RouterModule,
     CommonModule,
-    NgbModule
+    NgbModule,
   ],
   exports: [
     NavMenuComponent,

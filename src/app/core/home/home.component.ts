@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  isCollapsed = true;
+
   cliGenerate = [
     { Scaffold: 'Component', Usage: 'ng generate component [name]', Alias: 'ng g c [name]' },
     { Scaffold: 'Directive', Usage: 'ng generate directive [name]', Alias: 'ng g d [name]' },

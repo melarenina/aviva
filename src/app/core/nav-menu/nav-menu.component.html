@@ -1,11 +1,10 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary" [ngClass]="{'sticky' : isSticky || test}">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/" style="width: 19%;"><img src="../../../assets/logo.png" class="img-fluid"></a>
-    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+    <a class="navbar-brand" routerLink="/" style="width: 50%;"><img src="../../../assets/logo.png" class="img-fluid"></a>
+    <button class="navbar-toggler" type="button" (click)="collapsed()"
     [attr.aria-expanded]="!isCollapsed" aria-controls="navmemu">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="navbar-collapse" id="navmemu" [ngbCollapse]="isCollapsed">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
@@ -18,3 +17,16 @@
     </div>
   </div>
 </nav>
+
+<!--
+<header [ngClass]="{'sticky' : isSticky}">
+  <a routerLink="/" class="logo" ><img src="../../../assets/logo.png" style="width: 35%;"></a>
+  <ul>
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a routerLink="/cadastroMembro">Cadastro de Membros</a>
+    </li>
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a routerLink="/contato">Contato</a>
+    </li>
+  </ul>
+</header> -->

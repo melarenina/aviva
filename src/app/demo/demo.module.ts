@@ -6,6 +6,7 @@ import { DemoRoutingModule } from './demo-routing.module';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { TdFormComponent } from './td-form/td-form.component';
 import { DemoComponent } from './demo.component';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   declarations: [
