@@ -29,6 +29,13 @@
   background-size: cover;
 }
 
+.localizacaoDados{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 agm-map{
   height: 400px;
 }
