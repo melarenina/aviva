@@ -17,7 +17,9 @@ export class NavMenuComponent implements OnInit {
     this.isSticky = window.pageYOffset > 0;
   }
 
-  constructor() { }
+  constructor() {
+    this.isCollapsed = true;
+  }
 
   ngOnInit(): void { }
 

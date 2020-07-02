@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-fixed-nav-menu',
@@ -7,10 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FixedNavMenuComponent implements OnInit {
 
+  isSticky = false;
   isCollapsed = true;
+  test = false;
 
-  constructor() { }
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    this.isSticky = window.pageYOffset > 0;
+  }
+
+  constructor() {
+    this.isCollapsed = true;
+  }
 
   ngOnInit(): void { }
+
+  collapsed() {
+    this.isCollapsed = !this.isCollapsed;
+    this.test = !this.test;
+  }
 
 }
