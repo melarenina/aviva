@@ -56,14 +56,9 @@
 .contentContact{
   background-color: #000000a1;
   box-shadow: 10px 5px 5px #00000054;
-  /* display: flex;
-  flex: 50%;
+  display: flex;
   align-items: center;
-  color: #fffbfb;
-  text-align: center;
-  padding: 50px 80px;
-  position: relative;
-  text-align: justify; */
+  justify-content: center;
 }
 
 .contactPhotoText{
@@ -75,18 +70,11 @@
 }
 
 .contactLogo{
-  flex: 50%;
   background-image: url('../../assets/LogoAvivaBrancoContato.png');
-  color: #fffbfb;
-  background-color: #0000002b;
   text-align: center;
   padding: 50px 80px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
-  position: relative;
-  text-align: justify;
-  box-shadow: 10px 5px 5px #00000054;
 }
 
 p.contato{
