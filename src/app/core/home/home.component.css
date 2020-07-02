@@ -1,8 +1,36 @@
-#hero{
-  /* background-image: url(../../../assets/1.png);
-  background-repeat:no-repeat;
+.rowMetade {
+  display: flex;
+  flex-wrap: wrap;
+  height: 65vh;
+}
+
+/* Create four equal columns */
+.columnMetade {
+  flex: 25%;
+  padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .columnMetade {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .rowMetade {
+    flex-direction: column;
+  }
+}
+
+.localizacao{
+  background-image: url('../../../assets/local.jpg');
   background-size: cover;
-  background-position:center; */
+}
+
+agm-map{
+  height: 400px;
 }
 
 .h-txt {
@@ -75,6 +103,32 @@ main {
     width: 100%;
     height: auto;
   }
+}
+
+.card-image{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nossosCultos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linhaPequena{
+  margin-left: 45% !important;
+  margin-right: 45% !important;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+  border: 1px solid rgb(0, 0, 0) !important;
+  font-weight: bold !important;
+}
+
+.margemSecoes{
+  margin-bottom: 6.5rem !important;
+  margin-top: 6.5rem !important;
 }
 
 /* @media (max-width: 767px){
