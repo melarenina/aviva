@@ -1,3 +1,19 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.column {
+  flex: 25%;
+  padding: 20px;
+}
+
 .container{
   align-items: center;
 }
@@ -28,6 +44,19 @@
 
 .contactPhoto{
   color: #fffbfb;
+  text-align: center;
+  padding: 50px 80px;
+  position: relative;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+}
+
+.contentContact{
+  display: flex;
+  flex: 50%;
+  align-items: center;
+  color: #fffbfb;
   background-color: #000000a1;
   text-align: center;
   padding: 50px 80px;
@@ -36,7 +65,16 @@
   box-shadow: 10px 5px 5px #00000054;
 }
 
+.contactPhotoText{
+  color: #fffbfb;
+  text-align: center;
+  padding: 50px 80px;
+  position: relative;
+  text-align: justify;
+}
+
 .contactLogo{
+  flex: 50%;
   background-image: url('../../assets/LogoAvivaBrancoContato.png');
   color: #fffbfb;
   background-color: #0000002b;
@@ -44,6 +82,7 @@
   padding: 50px 80px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto;
   position: relative;
   text-align: justify;
   box-shadow: 10px 5px 5px #00000054;
@@ -66,4 +105,18 @@ p.contato{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
 }
