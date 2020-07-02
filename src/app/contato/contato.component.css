@@ -6,6 +6,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  height: -webkit-fill-available;
 }
 
 /* Create four equal columns */
@@ -53,16 +54,16 @@
 }
 
 .contentContact{
-  display: flex;
+  background-color: #000000a1;
+  box-shadow: 10px 5px 5px #00000054;
+  /* display: flex;
   flex: 50%;
   align-items: center;
   color: #fffbfb;
-  background-color: #000000a1;
   text-align: center;
   padding: 50px 80px;
   position: relative;
-  text-align: justify;
-  box-shadow: 10px 5px 5px #00000054;
+  text-align: justify; */
 }
 
 .contactPhotoText{
