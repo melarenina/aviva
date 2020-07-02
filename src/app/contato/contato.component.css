@@ -2,3 +2,68 @@
   align-items: center;
 }
 
+.list-group-item{
+  background-color: #0000003b !important;
+  margin-bottom: 5% !important;
+  line-height: 10vh;
+  display: flex;
+  align-items: center;
+  /* display: flex !important;
+  align-items: center !important;*/
+}
+
+.badge{
+  background-color: black;
+  max-width: 9vh;
+  max-height: 9vh;
+  margin: auto;
+}
+
+.lettering{
+  margin: auto;
+  font-size: xx-large;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.contactPhoto{
+  color: #fffbfb;
+  background-color: #000000a1;
+  text-align: center;
+  padding: 50px 80px;
+  position: relative;
+  text-align: justify;
+  box-shadow: 10px 5px 5px #00000054;
+}
+
+.contactLogo{
+  background-image: url('../../assets/LogoAvivaBrancoContato.png');
+  color: #fffbfb;
+  background-color: #0000002b;
+  text-align: center;
+  padding: 50px 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  text-align: justify;
+  box-shadow: 10px 5px 5px #00000054;
+}
+
+p.contato{
+  margin-bottom: 0;
+  padding-left: inherit;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../../assets/teste.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
