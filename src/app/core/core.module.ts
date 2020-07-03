@@ -13,8 +13,11 @@ import { GlobalErrorHandler } from './global-error-handler.service';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FixedNavMenuComponent } from './fixed-nav-menu/fixed-nav-menu.component';
+import { MapComponent } from './map/map.component';
 
+import { InjectionToken } from '@angular/core';
 
+export const INIT_COORDS = new InjectionToken<{lat: number, long: number}>('INIT_COORDS');
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { FixedNavMenuComponent } from './fixed-nav-menu/fixed-nav-menu.component
     ErrorComponent,
     NotFoundComponent,
     CarouselComponent,
-    FixedNavMenuComponent
+    FixedNavMenuComponent,
+    MapComponent
   ],
   imports: [
     RouterModule,
@@ -40,7 +44,8 @@ import { FixedNavMenuComponent } from './fixed-nav-menu/fixed-nav-menu.component
     FixedNavMenuComponent
   ],
   providers: [
-    { provide: ErrorHandler, useClass: GlobalErrorHandler }
+    { provide: ErrorHandler, useClass: GlobalErrorHandler },
+    { provide: INIT_COORDS, useValue: {lat: -22.874598, long: -47.128682} }
   ]
 })
 export class CoreModule { }
