@@ -1,3 +1,47 @@
+/* Container for flexboxes */
+.rowMargin {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+}
+
+/* Create four equal columns */
+.columnMargin {
+  flex: 25%;
+  padding: 20px;
+  width: -webkit-fill-available;
+  margin: 1%;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .columnMargin {
+    flex: 25%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .rowMargin {
+    flex-direction: column;
+  }
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 25%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
 .rowMetade {
   display: flex;
   flex-wrap: wrap;
@@ -137,6 +181,8 @@ main {
   margin-bottom: 6.5rem !important;
   margin-top: 6.5rem !important;
 }
+
+
 
 /* @media (max-width: 767px){
   #myVideo {
