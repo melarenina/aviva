@@ -9,9 +9,9 @@
 /* Create four equal columns */
 .columnMargin {
   flex: 25%;
-  padding: 20px;
   width: -webkit-fill-available;
-  margin: 1%;
+  margin: 2%;
+  height: 33vh;
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */

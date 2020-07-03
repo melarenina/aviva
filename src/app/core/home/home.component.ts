@@ -12,6 +12,21 @@ export class HomeComponent implements OnInit {
   isScrolled = false;
   isCollapsed = true;
 
+  galeria = [
+    '../../../assets/h1.jpg',
+    '../../../assets/h2.jpg',
+    '../../../assets/h3.jpg',
+    '../../../assets/h4.jpg',
+    '../../../assets/h5.jpg',
+    '../../../assets/h6.jpg',
+    '../../../assets/h7.jpg',
+    '../../../assets/h8.jpg',
+    '../../../assets/h9.jpg',
+    '../../../assets/h10.jpg',
+    '../../../assets/h11.jpg',
+    '../../../assets/h12.jpg'
+  ]
+
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     this.isScrolled = window.pageYOffset > 50;
