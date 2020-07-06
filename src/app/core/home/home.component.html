@@ -72,8 +72,10 @@
             <h6 style="color: white"><i class="far fa-lightbulb"></i><strong> Mateus 5 : 14-16</strong></h6>
             <h3 class="card-title py-3 font-weight-bold"><strong>LUZ DO MUNDO</strong></h3>
             <p class="pb-3">"Vocês são a luz do mundo. Não se pode esconder uma cidade construída sobre um monte.
-              E, também, ninguém acende uma candeia e a coloca debaixo de uma vasilha. Ao contrário, coloca-a no lugar apropriado,
-              e assim ilumina a todos os que estão na casa. Assim brilhe a luz de vocês diante dos homens, para que vejam as suas boas
+              E, também, ninguém acende uma candeia e a coloca debaixo de uma vasilha. Ao contrário, coloca-a no lugar
+              apropriado,
+              e assim ilumina a todos os que estão na casa. Assim brilhe a luz de vocês diante dos homens, para que
+              vejam as suas boas
               obras e glorifiquem ao Pai de vocês, que está nos céus."</p>
           </div>
         </div>
@@ -150,14 +152,14 @@
 
   <div class="row">
     <div class="col-md-12">
-      <div class="card card-image"
-        style="background-color: black; background-size: cover;">
+      <div class="card card-image" style="background-color: black; background-size: cover;">
         <div class="text-white text-center d-flex align-items-center justify-content-center py-5 px-4"
           style="background-color: rgba(0, 0, 0, 0);">
           <div>
             <h6 style="color: white"><i class="fas fa-map-marked-alt"></i></h6>
             <h3 class="card-title py-3 font-weight-bold"><strong>Como chegar</strong></h3>
-            <a href="https://www.google.com/maps/place/R.+Ant%C3%B4nio+Haddad,+185+-+Parque+Via+Norte,+Campinas+-+SP,+13065-702/@-22.8748306,-47.128833,19.6z/data=!4m5!3m4!1s0x94c8c778774aabe1:0xa774e14ff290804e!8m2!3d-22.874601!4d-47.1286848">
+            <a href="https://www.google.com/maps/place/R.+Ant%C3%B4nio+Haddad,+185+-+Parque+Via+Norte,+Campinas+-+SP,+13065-702/@-22.8748306,-47.128833,19.6z/data=!4m5!3m4!1s0x94c8c778774aabe1:0xa774e14ff290804e!8m2!3d-22.874601!4d-47.1286848"
+              target="_blank">
               <p>R. Antônio Haddad, 185 - Parque Via Norte - Campinas</p>
             </a>
           </div>
@@ -167,155 +169,141 @@
   </div>
   <div id="map"></div>
 
-  <!-- <div class="rowMetade" style="background-color: black; height: -webkit-fill-available;">
-    <div class="columnMetade localizacao">
-    </div>
 
-    <div class="columnMetade localizacaoDados">
+  <div class="row">
+    <div class="col-md-12 mb-4">
+      <div class="card card-image">
+        <div class="text-white text-center d-flex align-items-center justify-content-center py-5 px-4">
+          <div class="rowMargin" style="width: -webkit-fill-available;">
+            <div class="col">
+              <h2 style="color: black; font-weight: bold; text-align: center;">Galeria</h2>
+              <hr class="linhaPequena">
+              <div class="rowMargin">
+                <div class="columnMargin" style="background-color:#aaa;">
+                  <div class="card">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" [src]="galeria[0]" alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div>
+                    </div>
+                  </div>
+                </div>
 
-      <!-- <a class="mb-5" target="_blank"
-        href="https://www.google.com/maps/place/R.+Ant%C3%B4nio+Haddad,+185+-+Parque+Via+Norte,+Campinas+-+SP,+13065-702/@-22.8748306,-47.128833,19.6z/data=!4m5!3m4!1s0x94c8c778774aabe1:0xa774e14ff290804e!8m2!3d-22.874601!4d-47.1286848">
-        <i class="fas fa-map-marked-alt" style="color:white; font-size: 8vh;"></i>
-      </a>
-      <a style="display: flex; flex-direction: column; align-items: center;" target="_blank"
-        href="https://www.google.com/maps/place/R.+Ant%C3%B4nio+Haddad,+185+-+Parque+Via+Norte,+Campinas+-+SP,+13065-702/@-22.8748306,-47.128833,19.6z/data=!4m5!3m4!1s0x94c8c778774aabe1:0xa774e14ff290804e!8m2!3d-22.874601!4d-47.1286848">
-        <h2 style="color: white; font-weight: bold; margin-top: 5%;">IGREJA AVIVA CAMPINAS</h2>
-        <p style="color: white; margin-top: 5%; font-weight: 400;">R. Antônio Haddad, 185</p>
-        <p style="color: white">Parque Via Norte - Campinas/SP</p>
-      </a>
-    </div>
+                <div class="columnMargin" style="background-color:#aaa;">
+                  <div class="card">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" [src]="galeria[1]" alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div>
+                    </div>
+                  </div>
+                </div>
 
-  </div> -->
+                <div class="columnMargin" style="background-color:#bbb;">
+                  <div class="card">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" [src]="galeria[2]" alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="columnMargin" style="background-color:#bbb;">
+                  <div class="card">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" [src]="galeria[3]" alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div>
+                    </div>
+                  </div>
+                </div>
 
-  <div class="container nossosCultos margemSecoes" #comoChegar>
-    <div class="rowMargin" style="width: -webkit-fill-available;">
-      <div class="col">
-        <h2 style="color: black; font-weight: bold; text-align: center;">Galeria</h2>
-        <hr class="linhaPequena">
-        <div class="rowMargin">
-          <div class="columnMargin" style="background-color:#aaa;">
-            <div class="card">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" [src]="galeria[0]" alt="Card image cap">
-                <div class="mask rgba-white-slight"></div>
+                <div class="columnMargin" style="background-color:#ccc;">
+                  <div class="card">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" [src]="galeria[4]" alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="columnMargin" style="background-color:#ccc;">
+                  <div class="card">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" [src]="galeria[5]" alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columnMargin" style="background-color:#ddd;">
+                  <div class="card">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" [src]="galeria[6]" alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columnMargin" style="background-color:#ddd;">
+                  <div class="card">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" [src]="galeria[7]" alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columnMargin" style="background-color:#ddd;">
+                  <div class="card">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" [src]="galeria[8]" alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columnMargin" style="background-color:#ddd;">
+                  <div class="card">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" [src]="galeria[9]" alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columnMargin" style="background-color:#ddd;">
+                  <div class="card">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" [src]="galeria[10]" alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columnMargin" style="background-color:#ddd;">
+                  <div class="card">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" [src]="galeria[11]" alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
-
-          <div class="columnMargin" style="background-color:#aaa;">
-            <div class="card">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" [src]="galeria[1]" alt="Card image cap">
-                <div class="mask rgba-white-slight"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columnMargin" style="background-color:#bbb;">
-            <div class="card">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" [src]="galeria[2]" alt="Card image cap">
-                <div class="mask rgba-white-slight"></div>
-              </div>
-            </div>
-          </div>
-          <div class="columnMargin" style="background-color:#bbb;">
-            <div class="card">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" [src]="galeria[3]" alt="Card image cap">
-                <div class="mask rgba-white-slight"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columnMargin" style="background-color:#ccc;">
-            <div class="card">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" [src]="galeria[4]" alt="Card image cap">
-                <div class="mask rgba-white-slight"></div>
-              </div>
-            </div>
-          </div>
-          <div class="columnMargin" style="background-color:#ccc;">
-            <div class="card">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" [src]="galeria[5]" alt="Card image cap">
-                <div class="mask rgba-white-slight"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columnMargin" style="background-color:#ddd;">
-            <div class="card">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" [src]="galeria[6]" alt="Card image cap">
-                <div class="mask rgba-white-slight"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columnMargin" style="background-color:#ddd;">
-            <div class="card">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" [src]="galeria[7]" alt="Card image cap">
-                <div class="mask rgba-white-slight"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columnMargin" style="background-color:#ddd;">
-            <div class="card">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" [src]="galeria[8]" alt="Card image cap">
-                <div class="mask rgba-white-slight"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columnMargin" style="background-color:#ddd;">
-            <div class="card">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" [src]="galeria[9]" alt="Card image cap">
-                <div class="mask rgba-white-slight"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columnMargin" style="background-color:#ddd;">
-            <div class="card">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" [src]="galeria[10]" alt="Card image cap">
-                <div class="mask rgba-white-slight"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columnMargin" style="background-color:#ddd;">
-            <div class="card">
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" [src]="galeria[11]" alt="Card image cap">
-                <div class="mask rgba-white-slight"></div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
   </div>
-
 
 </div>
 
@@ -341,5 +329,22 @@
         </tbody>
       </table>
     </div>
+  </div>
+</div> -->
+
+<!-- <div class="rowMetade" style="background-color: black; height: -webkit-fill-available;">
+  <div class="columnMetade localizacao">
+  </div>
+  <div class="columnMetade localizacaoDados">
+    <!-- <a class="mb-5" target="_blank"
+      href="https://www.google.com/maps/place/R.+Ant%C3%B4nio+Haddad,+185+-+Parque+Via+Norte,+Campinas+-+SP,+13065-702/@-22.8748306,-47.128833,19.6z/data=!4m5!3m4!1s0x94c8c778774aabe1:0xa774e14ff290804e!8m2!3d-22.874601!4d-47.1286848">
+      <i class="fas fa-map-marked-alt" style="color:white; font-size: 8vh;"></i>
+    </a>
+    <a style="display: flex; flex-direction: column; align-items: center;" target="_blank"
+      href="https://www.google.com/maps/place/R.+Ant%C3%B4nio+Haddad,+185+-+Parque+Via+Norte,+Campinas+-+SP,+13065-702/@-22.8748306,-47.128833,19.6z/data=!4m5!3m4!1s0x94c8c778774aabe1:0xa774e14ff290804e!8m2!3d-22.874601!4d-47.1286848">
+      <h2 style="color: white; font-weight: bold; margin-top: 5%;">IGREJA AVIVA CAMPINAS</h2>
+      <p style="color: white; margin-top: 5%; font-weight: 400;">R. Antônio Haddad, 185</p>
+      <p style="color: white">Parque Via Norte - Campinas/SP</p>
+    </a>
   </div>
 </div> -->
