@@ -48,7 +48,16 @@ export class HomeComponent implements OnInit {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(this.map);
 
-    const marker = L.marker([this.latitude, this.longitude]);
+    const greenIcon = L.icon({
+      iconUrl: '../../../assets/mapa.png',
+
+      iconSize:     [43, 48], // size of the icon
+      shadowSize:   [50, 64], // size of the shadow
+      iconAnchor:   [24, 45], // point of the icon which will correspond to marker's location
+      popupAnchor:  [-1, -50] // point from which the popup should open relative to the iconAnchor
+  });
+
+    const marker = L.marker([this.latitude, this.longitude], {icon: greenIcon});
     // Adding popup to the marker
     marker.bindPopup('R. Antônio Haddad, 185 - Parque Via Norte').openPopup();
     marker.addTo(this.map); // Adding marker to the map

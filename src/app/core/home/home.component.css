@@ -93,12 +93,6 @@ agm-map{
   padding: 20 2%;
 }
 
-.container-aviva{
-  position: absolute;
-  /* background: rgba(131, 92, 92, 0.5); */
-  margin-top: -39%;
-  margin-left: 16%;
-}
 
 .overlay-desc {
   display: flex;
@@ -106,11 +100,25 @@ agm-map{
   flex-direction: column;
 }
 
+.container-aviva{
+  position: absolute;
+  /* background: rgba(131, 92, 92, 0.5); */
+  margin-top: -36%;
+  margin-left: 24%;
+}
+
 .h1-aviva {
   color: white;
   font-family: 'Nobile', sans-serif;
-  font-size: 9vw;
+  font-size: 7vw;
   text-align: center;
+}
+
+.p-aviva {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1vw;
+  line-height: 1.7rem;
 }
 
 main {
@@ -118,13 +126,6 @@ main {
   width: 80%;
 }
 
-.p-aviva {
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2vw;
-  line-height: 1.7rem;
-}
-/* #myVideo{} */
 
 @media (min-aspect-ratio: 16/9){
   #myVideo {
