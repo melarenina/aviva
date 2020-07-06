@@ -13,7 +13,6 @@ import { GlobalErrorHandler } from './global-error-handler.service';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FixedNavMenuComponent } from './fixed-nav-menu/fixed-nav-menu.component';
-import { MapComponent } from './map/map.component';
 
 import { InjectionToken } from '@angular/core';
 
@@ -27,8 +26,7 @@ export const INIT_COORDS = new InjectionToken<{lat: number, long: number}>('INIT
     ErrorComponent,
     NotFoundComponent,
     CarouselComponent,
-    FixedNavMenuComponent,
-    MapComponent
+    FixedNavMenuComponent
   ],
   imports: [
     RouterModule,

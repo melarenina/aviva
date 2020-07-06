@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import * as L from 'leaflet';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  map: L.Map;
   latitude = -22.874598;
   longitude = -47.128682;
   isScrolled = false;
@@ -36,6 +38,26 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.map = L.map('map', {
+      center: [this.latitude, this.longitude],
+      zoom: 20,
+      renderer: L.canvas()
+    });
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(this.map);
+
+    const marker = L.marker([this.latitude, this.longitude]);
+    // Adding popup to the marker
+    marker.bindPopup('R. Antônio Haddad, 185 - Parque Via Norte').openPopup();
+    marker.addTo(this.map); // Adding marker to the map
+
+    setTimeout(() => {
+      this.map.invalidateSize();
+    }, 0);
+
+    marker.openPopup();
   }
 
 }
